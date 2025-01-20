@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Reglamento Gimnasio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+			font-family: 'Poppins', sans-serif;
+            background-color: #D2D3D4;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .reglamento {
+            background: #ffffff;
+			background-color: #D2D3D4;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .reglamento h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .reglamento ol {
+            font-size: 1.1rem;
+            color: #555;
+            text-align: justify;
+        }
+        .reglamento ol li {
+            margin-bottom: 15px;
+        }
+        .reglamento ol li:not(:last-child)::after {
+            content: '';
+            display: block;
+            border-top: 1px solid #ddd;
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #FFFFFF;
+            background: #BB4A26;
+        }
+        .fondoazul {
+            color: #FFFFFF !important;
+            background: #003C5B;
+        }
+        .fondonaranja {
+            color: #FFFFFF !important;
+            background: #E4B7A8;
+        }
+		 /* Imagen para resoluciones grandes (PC o laptop) */
+        .header img.pc-logo {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Imagen para resoluciones pequeñas (celular) */
+        .header img.mobile-logo {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Media query para dispositivos pequeños */
+        @media screen and (max-width: 768px) {
+            .header img.pc-logo {
+                display: none;
+            }
+            .header img.mobile-logo {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid mt-5">
+    <div class="header">
+        <!-- Imagen para pantallas grandes -->
+        <img src="logocompleto.png" alt="Logo Completo" class="pc-logo">
+        <!-- Imagen para pantallas pequeñas -->
+        <img src="logo.png" alt="Logo Móvil" class="mobile-logo">
+    </div>
+
+    <div class="reglamento">
+        <h5 class="fondoazul text-center mt-1 mb-1">Reglamento del Gimnasio</h5>
+		
+		<div class="h-100 p-1 border rounded-3">
+            <ol>
+                <li>Todo usuario deberá estar inscrito y contar con sus pagos al corriente.</li>
+                <li>El responsable del área son los instructores en turno.</li>
+                <li>El acceso al área tendrá que ser sin mochilas, alimentos y refrescos. Deberá utilizar tenis, ropa deportiva y toalla personal (obligatoria).</li>
+                <li>La relación de instructor-usuario deberá ser de completo respeto.</li>
+                <li>El participar como instructor es tarea solo de las personas autorizadas y certificadas para ello del gimnasio.</li>
+                <li>Utilizar los aparatos el tiempo razonable o alternando con otro usuario.</li>
+                <li>El equipo utilizado durante el entrenamiento deberá ser puesto en su lugar al concluir la rutina.</li>
+                <li>No se admiten menores de 15 años en el área de pesas.</li>
+                <li>El usuario podrá tener buen ambiente sin llegar al desorden.</li>
+                <li>La persona que se sorprenda causando algún daño y destrozos se les sancionará.</li>
+                <li>No nos hacemos responsables por objetos olvidados o extraviados.</li>
+                <li>Para usar el vapor, jacuzzi o sauna deberá portar traje de baño.</li>
+                <li>Tiempo máximo de uso es 15 minutos para área de vapor, jacuzzi o sauna.</li>
+                <li>Es obligatorio bañarse antes y después de usar el vapor, jacuzzi o sauna y el uso de sandalias para evitar cualquier contagio.</li>
+                <li>No maltratar o dañar las instalaciones.</li>
+                <li>El horario de servicios para las áreas de sauna, vapor y jacuzzi es de lunes a viernes de 10:00 a 12:00 y de 16:00 a 19:00 hrs.</li>
+            </ol>
+        </div>
+		
+        <p class="p-1 text-center bg-dark text-white">Para quejas y sugerencias pasar al área administrativa a realizarlos por escrito.</p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
